@@ -7,7 +7,8 @@ agent any
 stages{
 stage('read Json'){
 steps{
-json
+
+json()
 
 
 
@@ -24,7 +25,7 @@ json
 
 stage('Create job'){
 steps{
-dsl_script
+dsl_script()
 }
 
 
