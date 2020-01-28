@@ -3,7 +3,7 @@
 
 
 
-
+pipelinejob('Test'){
 definition{
 cpsScm {
 scm {
@@ -23,3 +23,4 @@ triggers {
 
 }
 
+}
