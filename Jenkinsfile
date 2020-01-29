@@ -15,7 +15,7 @@ a()
 stage('Test'){
 steps{
 //sh 'echo $dsl'
-rungroovy("dsltest")
+rungroovy("dsltest.groovy")
 test()
 	}}
 }
