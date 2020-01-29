@@ -14,7 +14,7 @@ a()
 }
 stage('Test'){
 steps{
-rungroovy("${dsl}")
+rungroovy("$dsl")
 test()
 	}}
 }
