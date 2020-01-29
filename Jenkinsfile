@@ -7,14 +7,14 @@ agent any
 stages{
 stage('Import Data from JSON'){
 steps{
-a()
-
+xx= a()
+println() 
 
 }
 }
 stage('Test'){
 steps{
-sh 'echo $dsl'
+//sh 'echo $dsl'
 rungroovy(dsl)
 test()
 	}}
