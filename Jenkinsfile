@@ -7,7 +7,7 @@ agent any
 stages{
 stage('Import Data from JSON'){
 steps{
-final()
+importjson()
 
 
 }
