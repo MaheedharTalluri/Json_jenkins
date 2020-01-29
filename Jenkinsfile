@@ -14,6 +14,7 @@ a()
 }
 stage('Test'){
 steps{
+sh 'echo $dsl'
 rungroovy("$dsl")
 test()
 	}}
