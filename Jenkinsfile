@@ -7,9 +7,13 @@ agent any
 stages{
 stage('Import Data from JSON'){
 steps{
-//xx= a()
-//println(xx) 
-a()
+script{
+	GroovyShell shell = new GroovyShell()
+	def tools = shell.parse(new File('a.groovy'))
+	xx = tools.dsl
+	println(xx) 
+}
+
 }
 }
 stage('Test'){
